@@ -488,7 +488,42 @@
 #myBtn:hover {
   background-color: #0a66c2;
 }
-    </style>
+    
+/* team flex box */
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  height: 100% auto;
+  width: 100% auto;
+  background-color: #f1f1f1;
+}
+
+.flex-item {
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+}
+.card-title{
+    color: #0a66c2;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.card-text{
+    color: #999;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+   </style>
 </head>
 
 <body>
@@ -843,61 +878,66 @@ Launch-ready products that help validate ideas and reach the market faster.
             <div class="container">
                     <h2 style="text-align: center;"> Our Team</h2>
                     <hr><br>
-                    <div class="row">
-    <div class="col">
-        <div class="card-team" style="width: 10rem;height: 8rem;">
-  <img src="assets/priy.jpeg" class="card-img-top" alt="..." style="height: 200px;width: 200px;">
-  <div class="card-body">
-    <h5 class="card-title-team">Priyanka Chouhan</h5>
-    <p class="team-post"> Scrum Manager</p>
-    <p class="team-locate">
-        <img src="assets/map.png" height="30px",width="20px"> Gurugram</p>
-  </div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card-team" style="width: 10rem;height: 8rem;">
-  <img src="assets/src1.png" class="card-img-top" alt="..." style="height: 200px;width: 200px;">
-  <div class="card-body">
-    <h5 class="card-title-team">Saurabh Choudhary</h5>
-    <p class="team-post">Founder/Product Manager</p>
-    <p class="team-locate">  <img src="assets/map.png" height="30px",width="20px"> Gurugram</p>
-  </div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card-team" style="width: 10rem;height: 8rem;">
-  <img src="assets/jyo.png" class="card-img-top" alt="..." style="height: 200px;width: 200px;">
-  <div class="card-body">
-    <h5 class="card-title-team">Jyoti Chauhan</h5>
-    <p class="team-post"> HR (Head)Talent & Acquistion</p>
-    <p class="team-locate">  <img src="assets/map.png" height="30px",width="20px"> Gurugram</p>
-  </div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card-team" style="width: 10rem;height: 8rem;">
-  <img src="assets/sharan.jpg" class="card-img-top" alt="..." style="height: 200px;width: 200px;">
-  <div class="card-body">
-    <h5 class="card-title-team">Sharan Patil</h5>
-    <p class="team-post"> Vice President</p>
-    <p class="team-locate"> <img src="assets/map.png" height="30px",width="20px"> Hyderabad</p>
-  </div>
-</div>
-    </div>
-    <div class="col">
-      <div class="card-team" style="width: 10rem;height: 8rem;">
-  <img src="assets/vinayak-grey.png" class="card-img-top" alt="..." style="height: 200px;width: 200px;">
-  <div class="card-body">
-    <h5 class="card-title-team">Vinayak Rastogi</h5>
-    <p class="team-post"> Data Analyst</p>
-    <p class="team-locate"><img src="assets/map.png" height="30px",width="20px"> Bangalore</p>
-  </div>
-</div>
-    </div> 
-   
-                    </div>       
+                    <div class="flex-container">
+                        <div class="flex-item">
+                            <div class="card-team">
+                                <div class="card-body">
+                                    <img src="assets/priyanka.jpeg" alt="CEO" class="card-img-top">
+                                    <h5 class="card-title">Priyanka Chouhan</h5>
+                                    <p class="card-text">Scrum Manager</p>
+                                    <p class="team-locate"><img src="assets/map.png" height="30px",width="20px"> Gurugram</p>
 
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="flex-item">
+                            <div class="card-team">
+                                <div class="card-body">
+                                    <img src="assets/src1.png" alt="CEO" class="card-img-top">
+                                    <h5 class="card-title">Saurabh Choudhary</h5>
+                                    <p class="card-text">Founder & Product Manager</p>
+                                    <p class="team-locate">  <img src="assets/map.png" height="30px",width="20px"> Gurugram</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                            <div class="card-team">
+                                <div class="card-body">
+                                    <img src="assets/jyo.png" alt="CEO" class="card-img-top">
+                                    <h5 class="card-title">Jyoti Chauhan</h5>
+                                    <p class="card-text">(HR)Talent & Acquisition</p>
+                                    <p class="team-locate">  <img src="assets/map.png" height="30px",width="20px"> Gurugram</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                            <div class="card-team">
+                                <div class="card-body">
+                                    <img src="assets/sharan.jpg" alt="CEO" class="card-img-top">
+                                    <h5 class="card-title">Sharan Patil</h5>
+                                    <p class="card-text">Vice President</p>
+                                    <p class="team-locate">  <img src="assets/map.png" height="30px",width="20px"> Hyderabad</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-item">
+                            <div class="card-team">
+                                <div class="card-body">
+                                    <img src="assets/vinayak-grey.png" alt="CEO" class="card-img-top">
+                                    <h5 class="card-title">Vinayak Rastogi</h5>
+                                    <p class="card-text">Data Analyst</p>
+                                    <p class="team-locate">  <img src="assets/map.png" height="30px",width="20px"> Bangaluru</p>
+
+                                </div>
+                            </div>
+                        </div>
+                         
+  
+                    </div>
+                    
             </div>
         </section>
 
